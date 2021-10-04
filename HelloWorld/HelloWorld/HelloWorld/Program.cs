@@ -7,16 +7,24 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            int a = 20;
-            int b = 30;
+            int a = 6549;
+            int b = 7564;
 
-            Console.WriteLine("a: {0}, b: {1}", a, b);
+            if (a < b)
+                Console.WriteLine("Vetsi cislo je B: {0}", b);
+            else
 
-            int c = a;
-            a = b;
-            b = c;
+                Console.WriteLine("Vetsi cislo je A: {0}, ", a);
+            //int a = 20;
+            //int b = 30;
 
-            Console.WriteLine("a: {0}, b: {1}", a, b);
+            //Console.WriteLine("a: {0}, b: {1}", a, b);
+
+            //int c = a;
+            //a = b;
+            //b = c;
+
+            //Console.WriteLine("a: {0}, b: {1}", a, b);
 
            
             //Hello();
