@@ -60,6 +60,11 @@ namespace HelloWorld
             Console.Write("Zadej sve jmeno:");
             string jmeno = Console.ReadLine();
             Console.WriteLine();
+            if (jmeno == "Bob")
+                Console.WriteLine("Vítej zpět Bobe.");
+            else if (jmeno == "Alice")
+                Console.WriteLine("Vítej zpět Alice.");
+            else
             Console.WriteLine("Hello {0}", jmeno);
             
         }
