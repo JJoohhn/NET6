@@ -10,11 +10,13 @@ namespace HelloWorld
             int a = 20;
             int b = 30;
 
+            Console.WriteLine("a: {0}, b: {1}", a, b);
+
             int c = a;
             a = b;
             b = c;
 
-            Console.WriteLine("{0},{1}", a, b);
+            Console.WriteLine("a: {0}, b: {1}", a, b);
 
            
             //Hello();
