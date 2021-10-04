@@ -6,8 +6,23 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            PrevodTeploty();
 
-            Hello();
+            //string input = Console.ReadLine();
+
+
+            //--------------------------
+            
+            //int a = 23;
+
+            //double d = 444.5684;
+
+            //a = (int)Math.Round(d);
+
+            //Console.WriteLine(a);
+            //--------------------------
+
+            //Hello();
             //const int c_a = 155;
             //const int c_b = 255;
 
@@ -65,10 +80,18 @@ namespace HelloWorld
             else if (jmeno == "Alice")
                 Console.WriteLine("Vítej zpět Alice.");
             else
-            Console.WriteLine("Hello {0}", jmeno);
-            
+                Console.WriteLine("Hello {0}", jmeno);
+
+        }
+        static void PrevodTeploty()
+        {
+            Console.Write("Zadej stupně ve Fahrenheit:");
+            double far = double.Parse(Console.ReadLine());
+            double cel = far - 112;
+            Console.WriteLine("Teplota v Celsia je: {0}", cel);
+
         }
 
-
+        //Hello(name.ToLower()) -- Změna velikosti písma
     }
 }
