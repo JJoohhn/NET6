@@ -7,14 +7,10 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            int a = 6549;
-            int b = 7564;
+            PorovnaniCisel(6549, 5000);
+            
 
-            if (a < b)
-                Console.WriteLine("Vetsi cislo je B: {0}", b);
-            else
-
-                Console.WriteLine("Vetsi cislo je A: {0}, ", a);
+           
             //int a = 20;
             //int b = 30;
 
@@ -30,6 +26,15 @@ namespace HelloWorld
             //Hello();
             //Console.ReadLine();
 
+        }
+        
+        static void PorovnaniCisel (int a, int b)
+        {
+            if (a < b)
+                Console.WriteLine("Vetsi cislo je B: {0}", b);
+            else
+
+                Console.WriteLine("Vetsi cislo je A: {0}", a);
         }
         static void Hello()
         {
