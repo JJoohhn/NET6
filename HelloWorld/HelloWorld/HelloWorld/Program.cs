@@ -6,10 +6,19 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-        
+
+            int a = 20;
+            int b = 30;
+
+            int c = a;
+            a = b;
+            b = c;
+
+            Console.WriteLine("{0},{1}", a, b);
+
            
-            Hello();
-            Console.ReadLine();
+            //Hello();
+            //Console.ReadLine();
 
         }
         static void Hello()
