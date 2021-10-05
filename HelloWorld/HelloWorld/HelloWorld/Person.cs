@@ -12,11 +12,12 @@ namespace HelloWorld
         //proprty
         //metody
 
-        //public Person()
-        //{
-        //    FirstName = "nezadano";
-        //    LastName = "nezadano";
-        //}
+        public Person()
+        {
+            FirstName = "nezadano";
+            LastName = "nezadano";
+            Age = 0;
+        }
 
         public Person(string firstName, string lastName, int age)
         {
@@ -39,6 +40,7 @@ namespace HelloWorld
         public override string ToString()
         {
             return GetFullName();
+        }
 
         
 
