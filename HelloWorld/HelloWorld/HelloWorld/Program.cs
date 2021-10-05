@@ -6,14 +6,102 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            RokNarozeni();
+
+
+            Console.WriteLine("Zadávej čísla: ");
+            int cislo = int.Parse(Console.ReadLine());
+            
+            int soucet = 0;
+            int [] sumahodnot = new int[cislo];
+
+            for (int i = 0; i <= sumahodnot.Length; i++)
+            {
+                soucet = soucet + i;
+            }
+
+
+            Console.WriteLine("Součet je: {0}", soucet);
             
             
+
+            //while (cislo % 2 !=0)
+            //{
+            //    Console.WriteLine("Zadávej čísla: ");
+            //    double cislo = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Cislo je liche {0}", cislo);
+
+            //}
+
+
+            //array - ple cisel
+            //int[] numbers = new[] { 10, 11, 12, 13, 20, 67 };
+
+            //// klasicky for s indexem - vim kolikrat se opakuje
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    var num = numbers[i];
+            //    Console.WriteLine("Na indexu {0} je hodnota {1}", i, num);
+            //}
+
+            //// foreach - iterace pres kolekci prvku (pole)
+            //foreach (int number in numbers)
+            //{
+            //    Console.WriteLine("ted se zpracovavam cislo {0}", number);
+            //}
+
+            ////while cyklus
+            //int counter = 0;
+            //while (counter < 5)
+            //{
+            //    counter = counter++;
+            //}
+
+
+            //var daynumber = 5;
+            //var dayname = GetDayName(daynumber);
+            //Console.WriteLine($"{daynumber}. den je {dayname}");
+
+            //RokNarozeni();
 
         }
 
-        static void RokNarozeni()
+        static string GetDayName(int day)
         {
+            switch (day)
+            {
+                case 1:
+                    return "pondeli";
+                    break;
+                case 2:
+                    return "úterý";
+                    break;
+                case 3:
+                    return "středa";
+                    break;
+                case 4:
+                    return "čtvrtek";
+                    break;
+                case 5:
+                    return "pátek";
+                    break;
+                case 6:
+                    return "sobota";
+                    break;
+                case 7:
+                    return "neděle";
+                    break;
+                default:
+                    return "neznám";
+                    break;
+
+
+
+            }
+        }
+
+
+        static void RokNarozeni()
+        {            
             Console.WriteLine("napiš rok narození: ");
             int rok = int.Parse(Console.ReadLine());
             if (rok <= 1964 && rok >= 1946)
