@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace HelloWorld
 {
     class Person
@@ -16,20 +17,31 @@ namespace HelloWorld
         {
             FirstName = "nezadano";
             LastName = "nezadano";
-            Age = 0;
+            //Age = 0;
         }
 
+        
+        
         public Person(string firstName, string lastName, int age)
         {
             FirstName = firstName;
             LastName = lastName;
-            Age = age;
+            //Age = age;
         }
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
 
         public int Age { get; set; }
+
+        public Address HomeAddress { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
+
+        //public int Age()
+        //{
+        //    return DateTime.Now.Year - DateOfBirth.Year;
+        //}
 
         public string GetFullName()
         {
